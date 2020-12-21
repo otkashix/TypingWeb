@@ -1,0 +1,68 @@
+body{
+    background-color: #011d20;
+    color: white;
+}
+#container{
+    margin-left: 25%;;
+    margin-top: 20%;
+}
+table, th, tr, td{
+    border-collapse: collapse;
+}
+th, tr, td{
+    border: 2px solid black;
+    text-align: center;
+}
+th{
+    color: grey;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+}
+#message{
+    float: left;
+    background-color: #011d20;
+    margin-left: 5%;
+    font-size: 22px;
+}
+#write{
+    float: left;
+    clear: both;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color: #011d20;
+    border: 0px;
+    border-bottom: 3px solid grey;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+#write::placeholder{
+    color: lightskyblue;
+}
+button{
+    border: 2px solid darkgrey;
+    color: white;
+    background-color: #011d20;
+    font-weight: normal;
+    outline: none;
+    width: 75px;
+    height: 25px;
+}
+button:hover{
+    background-color: #01282c;
+    font-weight: bold;
+    color: lightgrey;
+}
+#write:focus{
+    border-bottom: 3px solid cyan;
+    outline: none;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
