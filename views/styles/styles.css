@@ -2,12 +2,18 @@ body{
     background-color: #011d20;
     color: white;
 }
-#container{
-    margin-left: 20%;;
-    margin-top: 20%;
+#container {
+    margin: auto;
+    margin-top: 15%;
+    width: 80%;
 }
+
 table, th, tr, td{
     border-collapse: collapse;
+}
+table{
+    width: 60%;
+    margin: auto;
 }
 th, tr, td{
     border: 2px solid black;
@@ -23,6 +29,7 @@ th{
     float: left;
     background-color: #011d20;
     margin-left: 5%;
+    margin-right: 5%;
     font-size: 22px;
 }
 #write{

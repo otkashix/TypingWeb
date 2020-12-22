@@ -5,7 +5,8 @@ $(document).ready(function() {
     var speed = 0;
     var goal = 0;
     var lang = navigator.language;
-    var msg = "Al amanecer del quinto día, al alba, mira al este.";
+    //var msg = "Al amanecer del quinto día, al alba, mira al este.";
+    var msg = "Bienvenido a mi página nueva, soy kashix y estoy empezando este proyecto para aprender más sobre la programación. La verdad es que no me ha salido nada mal esta página.";
     var pos = 0;
     var started = false;
     var keys = 0;
@@ -91,8 +92,8 @@ $(document).ready(function() {
                 words++;
             }else{
                 started = false;
-                speed = Math.floor((words / (60-time))*100);
-                kspeed = Math.floor((keys / (60-time))*100);
+                speed = Math.floor((words / (time / 60)));
+                kspeed = Math.floor((keys / (time / 60)));
             };            
 
             pos++;
