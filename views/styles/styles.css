@@ -67,10 +67,13 @@ button:hover{
     border-bottom: 3px solid cyan;
     outline: none;
 }
-.green{
+.correct{
     color: green;
 }
-.red{
+.fail{
     color: red;
+}
+.current{
+    color: grey;
 }
 

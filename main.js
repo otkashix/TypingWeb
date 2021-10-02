@@ -13,5 +13,6 @@ app.use(express.static('views'));
 //app.get('/', (req, res) => res.render('/views/public/index.html'));
 app.get('/', function(req, res){
     res.setHeader('Content-Type', 'text/css')
+    res.header("Content-Type",'application/json');
     res.render('/views/public/index.html')
 });
