@@ -56,6 +56,8 @@ $(document).ready(function() {
         words = 0;
         keys = 0;
         kspeed = 0;
+        corrects = [];
+        fails = [];
     }
 
     document.getElementById("lang").innerHTML = lang;
@@ -126,7 +128,7 @@ $(document).ready(function() {
             }
         };
             
-        if(pos == text.length || pos >= text.length){
+        if(pos >= text.length){
 
             pos = 0;
 
@@ -156,10 +158,10 @@ $(document).ready(function() {
 
                 if(write === text[pos]){
                     corrects.push(pos);
-                    console.log("Correctas - " + corrects)
+                    //console.log("Correctas - " + corrects)
                 }else{
                     fails.push(pos);
-                    console.log("No - " + fails)
+                    //console.log("No - " + fails)
                 }
 
                 // Update the position of the current word to be written
